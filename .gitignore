@@ -32,6 +32,22 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+
+# Firebase native config (never commit real values — use the .example files)
+google-services.json
+GoogleService-Info.plist
+android/app/google-services.json
+ios/GoogleService-Info.plist
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+**/*.mobileprovision
+*.p8
+*.p12
 
 # typescript
 *.tsbuildinfo

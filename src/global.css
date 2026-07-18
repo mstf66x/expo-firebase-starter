@@ -1,9 +1,44 @@
-:root {
-  --font-display:
-    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-    Segoe UI Symbol, Noto Color Emoji;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens — single source of truth for color.
+ * `tailwind.config.js` maps these to semantic class names (bg-, text-, brand-…).
+ * The `.dark` scope is toggled by NativeWind's colorScheme API (see settings-store).
+ */
+@layer base {
+  :root {
+    --color-bg: 255 255 255;
+    --color-surface: 244 244 245;
+    --color-card: 255 255 255;
+    --color-text: 24 24 27;
+    --color-muted: 113 113 122;
+    --color-border: 228 228 231;
+    --color-brand: 37 99 235;
+    --color-brand-fg: 255 255 255;
+    --color-danger: 220 38 38;
+    --color-success: 22 163 74;
+
+    --font-display:
+      Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+      Segoe UI Symbol, Noto Color Emoji;
+    --font-mono:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+  }
+
+  .dark:root {
+    --color-bg: 9 9 11;
+    --color-surface: 24 24 27;
+    --color-card: 24 24 27;
+    --color-text: 244 244 245;
+    --color-muted: 161 161 170;
+    --color-border: 39 39 42;
+    --color-brand: 59 130 246;
+    --color-brand-fg: 255 255 255;
+    --color-danger: 248 113 113;
+    --color-success: 74 222 128;
+  }
 }

@@ -1,0 +1,6 @@
+# iOS code signing via `match`. The git URL of your private certificates repo
+# is read from env so it never lands in this public repo.
+git_url(ENV['MATCH_GIT_URL'])
+storage_mode('git')
+type('appstore')
+app_identifier([ENV['APP_BUNDLE_ID'] || 'com.example.expofirebasestarter'])

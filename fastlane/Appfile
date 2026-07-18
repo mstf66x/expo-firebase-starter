@@ -1,0 +1,14 @@
+# All identifiers come from env so nothing app-specific is committed.
+# Set these in your shell / CI (see fastlane/README.md).
+app_identifier(ENV['APP_BUNDLE_ID'] || 'com.example.expofirebasestarter')
+
+for_platform :ios do
+  apple_id(ENV['APPLE_ID'])
+  team_id(ENV['APPLE_TEAM_ID'])
+end
+
+for_platform :android do
+  # Path to the Google Play service-account JSON (kept OUTSIDE the repo).
+  json_key_file(ENV['PLAY_JSON_KEY_PATH'])
+  package_name(ENV['APP_BUNDLE_ID'] || 'com.example.expofirebasestarter')
+end
