@@ -1,0 +1,21 @@
+{
+  "name": "marketing-screenshots",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generate App Store marketing screenshots (1290x2796) from HTML/CSS templates.",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx src/generate.ts",
+    "generate:iphone": "tsx src/generate.ts --device iphone-16-pro-max",
+    "generate:ipad": "tsx src/generate.ts --device ipad-pro-13",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
