@@ -2,6 +2,10 @@
 
 > A production-ready **Expo (React Native) + Firebase** boilerplate for **solo developers** — native **Firestore, Auth & Analytics**, **Expo Router**, **TypeScript**, **NativeWind (Tailwind CSS)**, **Zustand**, and **Fastlane**. No EAS required.
 
+<p align="center">
+  <img src=".github/social-preview.png" alt="Expo + Firebase Starter Kit — native Auth, Firestore & Analytics, Expo Router, TypeScript, NativeWind, Zustand, Fastlane, no EAS" width="100%">
+</p>
+
 <p>
   <img alt="Expo SDK 57" src="https://img.shields.io/badge/Expo-SDK%2057-000020?logo=expo&logoColor=white">
   <img alt="React Native" src="https://img.shields.io/badge/React%20Native-0.86-61DAFB?logo=react&logoColor=black">
