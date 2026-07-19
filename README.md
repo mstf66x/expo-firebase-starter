@@ -123,6 +123,18 @@ npm run android:internal  # → Play internal track
 
 See [`fastlane/README.md`](fastlane/README.md) for the required env vars.
 
+## 🖼️ App Store screenshots included
+
+A headless **App Store screenshot generator** ships in
+[`store-assets/marketing/`](store-assets/marketing/) — device frame + headline +
+gradient, rendered from HTML/CSS via Puppeteer. Drop raw screenshots into `raw/`,
+edit the slides JSON, and render 1290×2796 (iPhone) / 2064×2752 (iPad) store art:
+
+```bash
+cd store-assets/marketing && npm install
+npm run generate:iphone   # → out/iphone/IPHONE_69_<n>.png
+```
+
 ## 📜 Scripts
 
 | Command | Description |

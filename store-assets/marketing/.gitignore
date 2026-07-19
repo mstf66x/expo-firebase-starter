@@ -1,0 +1,9 @@
+node_modules
+versions
+package-lock.json
+
+# Input screenshots & generated output — keep the folders, ignore the images.
+raw/**
+out/**
+!raw/.gitkeep
+!out/.gitkeep

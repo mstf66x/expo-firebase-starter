@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "headline": "Sign in\nin seconds",
+    "appScreenshot": "01-sign-in.png",
+    "perspective": { "rotateYDeg": -18, "rotateXDeg": 6 },
+    "background": { "top": "#0f1f3d", "mid": "#15326b", "bottom": "#1a4ba0" }
+  },
+  {
+    "id": 2,
+    "headline": "Realtime data\nwith Firestore",
+    "appScreenshot": "02-home.png",
+    "perspective": { "rotateYDeg": 16, "rotateXDeg": 5 },
+    "background": { "top": "#0d0d0f", "mid": "#1a1a1f", "bottom": "#28282f" }
+  },
+  {
+    "id": 3,
+    "headline": "Beautiful in\nlight & dark",
+    "appScreenshot": "03-theme.png",
+    "perspective": { "rotateYDeg": -10, "rotateXDeg": 12 }
+  },
+  {
+    "id": 4,
+    "headline": "Analytics\nbuilt in",
+    "appScreenshot": "04-analytics.png",
+    "perspective": { "rotateYDeg": -4, "rotateXDeg": 0 },
+    "background": { "top": "#0f1d12", "mid": "#1f3a25", "bottom": "#2e5c3a" }
+  },
+  {
+    "id": 5,
+    "headline": "Ship faster\nwith Expo",
+    "appScreenshot": "05-profile.png",
+    "perspective": { "rotateYDeg": -24, "rotateXDeg": 10 },
+    "background": { "top": "#0f1f3d", "mid": "#15326b", "bottom": "#1a4ba0" }
+  }
+]
