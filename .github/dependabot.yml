@@ -13,6 +13,13 @@ updates:
       firebase:
         patterns:
           - "@react-native-firebase/*"
+    ignore:
+      # eslint-config-expo@57 ships @typescript-eslint 8 (typescript <6.1.0) and
+      # eslint-plugin-react 7 (eslint <=9). Either major crashes `expo lint`.
+      - dependency-name: typescript
+        update-types: [version-update:semver-major]
+      - dependency-name: eslint
+        update-types: [version-update:semver-major]
   - package-ecosystem: github-actions
     directory: /
     schedule:
